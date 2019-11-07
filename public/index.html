@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <title>Udonarium 1.10.0 惨劇RoopeR拡張</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="description"
+    content="BakaFire様製作の同人ボードゲーム惨劇RoopeRをブラウザ上で遊ぶために、@TK11235様製作のオンラインツールUdonariumを拡張したものです。誰でも気軽に使用できます。このサイトは惨劇コモンズを使用しています。" />
+  <meta name="keywords" content="惨劇RoopeR,惨劇ルーパー,Tragedy Looper,オンラインセッション,ツール,支援,Udonarium,ボードゲーム" />
+  <meta name="og:sitename" content="Udonarium 1.10.0 惨劇RoopeR拡張" />
+  <meta name="og:locale" content="ja_JP" />
+  <meta name="og:title" content="Udonarium 1.10.0 惨劇RoopeR拡張" />
+  <meta name="og:description"
+    content="BakaFire様製作の同人ボードゲーム惨劇RoopeRをブラウザ上で遊ぶために、@TK11235様製作のオンラインツールUdonariumを拡張したものです。誰でも気軽に使用できます。このサイトは惨劇コモンズを使用しています。" />
+  <meta name="og:url" content="https://rooper-401ef.firebaseapp.com/" />
+  <meta name="twitter:site" content="@hibohiboo" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:creator" content="@hibohiboo" />
+  <meta name="twitter:title" content="Udonarium 1.10.0 惨劇RoopeR拡張" />
+  <meta name="twitter:description"
+    content="BakaFire様製作の同人ボードゲーム惨劇RoopeRをブラウザ上で遊ぶために、@TK11235様製作のオンラインツールUdonariumを拡張したものです。誰でも気軽に使用できます。このサイトは惨劇コモンズを使用しています。" />
+  <meta name="twitter:image"
+    content="https://rooper-401ef.firebaseapp.com/udonarium/assets/images/tragedy_commons_5th/package/package.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon-180x180.png" />
+  <link rel="icon" type="image/png" href="/icon-192x192.png" />
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <script href="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
+  <script href="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    $(function () {
+      $("img.lazy").lazyload();
+    });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-KQ4P7CJ");
+  </script>
+  <!-- End Google Tag Manager -->
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4P7CJ" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <h1>惨劇RoopeR専用Udonarium</h1>
+  <div class="in">
+    <a href="/udonarium/" class="btn-flat-double-border">入室</a>
+  </div>
+
+  <div>
+    <ul style="position:relative;top:2em;margin:2px;">
+      <li>
+        <a href="http://bakafire.main.jp/rooper/sr_top.htm">惨劇RoopeR（BakaFire Party様製作)</a>をオンラインで遊ぶために<a
+          href="https://github.com/TK11235/udonarium">ユドナリウム</a>を拡張しました。
+      </li>
+      <li>惨劇コモンズ、惨劇コモンズχ作成:BakaFire様、紺ノ玲様。</li>
+      <li>動作確認はChromeで行っています。</li>
+      <li>
+        Udonarium版では、手札の自動公開やカードの移動は実装していません。手動でお願いします。
+        そちらが良い方は、新キャラ未対応ですが引き続き
+        <a href="http://asuwa.mistysky.net/rooper/rooper.cgi">オンライン惨劇ツール（旧作）</a>をご利用ください。
+      </li>
+    </ul>
+  </div>
+  <br />
+  <h2>使い方</h2>
+  <div style="padding-left: 20px">
+    <h3>部屋を作る</h3>
+
+    <div style="padding-left: 20px;display:flex">
+      <dl class="help-list">
+        <dt>部屋を作る</dt>
+        <dd>
+          「接続情報」パネルの「ロービー（ルーム一覧）を表示」をクリック
+        </dd>
+        <dd>
+          「新しいルームを作成する」をクリック
+        </dd>
+        <dd>
+          ルーム名に、好きな部屋名を入れ、「新しいルームを作成」をクリック
+        </dd>
+        <dt>部屋への参加</dt>
+        <dd>
+          「接続情報」パネルの「ロービー（ルーム一覧）を表示」をクリック
+        </dd>
+        <dd>
+          表示されるルーム一覧から、入りたい部屋を選ぶ
+        </dd>
+      </dl>
+      <img class="lazy" style="padding-left:10px;width:800px;" src="./connect.gif" />
+    </div>
+
+    <h3>セーブ・ロード</h3>
+    <div>
+      <dl class="help-list">
+        <dt>データの保存</dt>
+        <dd>
+          左上のメニューの保存ボタンをクリック
+        </dd>
+      </dl>
+      <img class="lazy" style="padding-left:10px;" src="./save.gif" />
+    </div>
+    <div>
+      <dl class="help-list">
+        <dt>データの復元</dt>
+        <dd>
+          保存を押したときにダウンロードされたzipファイルをブラウザにドラッグアンドロップ。
+        </dd>
+      </dl>
+      <img class="lazy" style="padding-left:10px;" src="./load.gif" />
+    </div>
+    <h3>脚本準備</h3>
+    <div style="padding-left: 20px;display:flex">
+      <dl class="help-list">
+        <dt>キャラクターの準備</dt>
+        <dd>
+          ボードを選択＞右クリックコンテキストメニュー＞キャラクターの追加
+        </dd>
+        <dt>キャラクター一覧からの追加</dt>
+        <dd>
+          キャラクター一覧の山札を選択 ＞ 右クリックコンテキストメニュー ＞<br />
+          カード一覧 ＞ 山札から出す
+        </dd>
+      </dl>
+      <img class="lazy" style="padding-left:10px;" src="./setup.gif" />
+    </div>
+    <div style="padding-left: 20px;">
+      <p>
+        以下の内容は、ボードをクリックして「？」を押しても見れます。
+      </p>
+      <p>
+        マウスのカーソルがカードの上に載っている状態を「カードの上」としています。
+      </p>
+      <h3>キャラクター操作</h3>
+      <div style="display:flex">
+        <dl class="help-list">
+          <dt>カードの上で[t]</dt>
+          <dd>カードを横にする</dd>
+          <dt>カードの上で[u]</dt>
+          <dd>カードを縦にする</dd>
+          <dt>カードの上でダブルクリック</dt>
+          <dd>カードを裏返す</dd>
+          <dt>カードの上で[y]</dt>
+          <dd>友好カウンター+1</dd>
+          <dt>カードの上で[shift]+[y]</dt>
+          <dd>友好カウンター-1</dd>
+          <dt>カードの上で[h]</dt>
+          <dd>不安カウンター+1</dd>
+          <dt>カードの上で[shift]+[h]</dt>
+          <dd>不安カウンター-1</dd>
+          <dt>カードの上で[a]</dt>
+          <dd>暗躍カウンター+1</dd>
+          <dt>カードの上で[shift]+[a]</dt>
+          <dd>暗躍カウンター-1</dd>
+        </dl>
+        <img class="lazy" style="padding-left:10px;" src="./card.gif" />
+      </div>
+      <h3>テーブル操作</h3>
+      <dl class="help-list">
+        <dt>[→]</dt>
+        <dd>テーブルを左に移動</dd>
+        <dt>[↑]</dt>
+        <dd>テーブルを下に移動</dd>
+        <dt>[←]</dt>
+        <dd>テーブルを右に移動</dd>
+        <dt>[↓]</dt>
+        <dd>テーブルを上に移動</dd>
+        <dt>[shift]+[→]</dt>
+        <dd>テーブルを時計回りに回転</dd>
+        <dt>[shift]+[↑]</dt>
+        <dd>テーブルを手前に倒す</dd>
+        <dt>[shift]+[←]</dt>
+        <dd>テーブルを逆時計回りに移動</dd>
+        <dt>[shift]+[↓]</dt>
+        <dd>テーブルを奥に倒す</dd>
+      </dl>
+      <h3>その他</h3>
+      <dl class="help-list">
+        <dt>[?]</dt>
+        <dd>キーボードショートカット表示</dd>
+        <dt>[ESC]</dt>
+        <dd>キーボードショートカットを閉じる</dd>
+      </dl>
+      <h3>著作権について</h3>
+      <p>
+        <a href="http://bakafire.main.jp/rooper/sr_dl_04_sozai.htm">惨劇コモンズX</a>を使用しています。
+      </p>
+      <p>
+        惨劇コモンズ作成: <a href="https://twitter.com/BakaFire">“BakaFire”</a><a href="https://twitter.com/kon_nyo">“紺ノ玲”</a>
+      </p>
+      <p>
+        <a href="http://bakafire.main.jp/top.html">BackFire (BakaFire Party)</a>
+      </p>
+    </div>
+</body>
+
+</html>
