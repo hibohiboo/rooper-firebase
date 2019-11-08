@@ -25,7 +25,7 @@
   <meta name="twitter:description"
     content="BakaFire様製作の同人ボードゲーム惨劇RoopeRをブラウザ上で遊ぶために、@TK11235様製作のオンラインツールUdonariumを拡張したものです。誰でも気軽に使用できます。このサイトは惨劇コモンズを使用しています。" />
   <meta name="twitter:image"
-    content="https://rooper-401ef.web.app/package.png" />
+    content="https://rooper-401ef.web.app/package.jpg" />
   <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon-180x180.png" />
   <link rel="icon" type="image/png" href="/icon-192x192.png" />
   <link rel="stylesheet" type="text/css" href="./style.css" />
@@ -33,10 +33,10 @@
   src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
   integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
   crossorigin="anonymous"></script>
-  <script href="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
   <script type="text/javascript" charset="utf-8">
     $(function () {
-      $("img.lazy").lazyload();
+    //  $("img.lazy").lazyload();
     });
   </script>
   <!-- Google Tag Manager -->
@@ -60,7 +60,8 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ4P7CJ" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <h1>惨劇RoopeR専用Udonarium</h1>
+  <h1>オンライン惨劇ツール</h1>
+  <h2>惨劇RoopeR専用Udonarium</h2>
   <div class="in">
     <a href="/udonarium/" class="btn-flat-double-border">入室</a>
   </div>
@@ -85,7 +86,7 @@
   <div style="padding-left: 20px">
     <h3>部屋を作る</h3>
 
-    <div style="padding-left: 20px;display:flex">
+    <div class="linenup-img-description">
       <dl class="help-list">
         <dt>部屋を作る</dt>
         <dd>
@@ -128,7 +129,7 @@
       <img class="lazy" style="padding-left:10px;" src="./load.gif" />
     </div>
     <h3>脚本準備</h3>
-    <div style="padding-left: 20px;display:flex">
+    <div  class="linenup-img-description">
       <dl class="help-list">
         <dt>キャラクターの準備</dt>
         <dd>
@@ -150,7 +151,7 @@
         マウスのカーソルがカードの上に載っている状態を「カードの上」としています。
       </p>
       <h3>キャラクター操作</h3>
-      <div style="display:flex">
+      <div  class="linenup-img-description">
         <dl class="help-list">
           <dt>カードの上で[t]</dt>
           <dd>カードを横にする</dd>

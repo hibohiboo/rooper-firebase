@@ -21,3 +21,11 @@ a {
 .btn-flat-double-border:hover {
   background: #113355;
 }
+.linenup-img-description {
+  padding-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+h1 {
+  color: red;
+}
