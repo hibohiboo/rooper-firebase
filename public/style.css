@@ -41,10 +41,15 @@ h1 {
 }
 .rotage_alert div {
   color: white;
-  font-size: 3em;
+  font-size: 1rem;
   padding: 10px;
 }
 img {
-  width: 100%;
   padding-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    width: 100%;
+  }
 }

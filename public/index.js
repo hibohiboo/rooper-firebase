@@ -6,7 +6,7 @@ $(function() {
   });
 
   $(window).bind("load orientationchange", function() {
-    if (Math.abs(window.orientation) === 90) {
+    if (Math.abs(window.orientation) === 90 || this.screen.availWidth > 1023) {
       $j_screen.remove();
     } else {
       $j_screen.show();
